@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text">
+    <script>
+        const input = document.querySelector('input')
+
+        /* 
+        input.addEventListener('keydown', function () {
+            console.log("键盘按下");
+        })
+        input.addEventListener('keyup', function () {
+            console.log("键盘弹起");
+        }) */
+        input.addEventListener('input', function () {
+            /* console.log("用户正在输入!");
+            console.log("用户输入的是:" + input.value); */
+            const kk = input.value
+
+            console.log("输入的长度是:" + kk.length);
+        })
+    </script>
+</body>
+
+</html>

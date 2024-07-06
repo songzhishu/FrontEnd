@@ -1,0 +1,40 @@
+<!--
+ * @Author: 宋之树 2334304096@qq.com
+ * @Date: 2024-07-03 21:19:21
+ * @LastEditors: 宋之树 2334304096@qq.com
+ * @LastEditTime: 2024-07-03 21:25:42
+ * @FilePath: \JS\day03\15-阻止元素的默认行为.html
+ * @Description: 
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="http://www.baidu.com">
+        <input type="submit" value="免费注册">
+    </form>
+    <a href="http://www.baidu.com">百度</a>
+    <script>
+        const form = document.querySelector('form')
+        form.addEventListener('submit', function (e) {
+            /* 阻止默认行为 提交 */
+            e.preventDefault()
+
+        })
+        const a = document.querySelector('a')
+
+        a.addEventListener('click', function (e) {
+            /* 阻止默认行为 提交 */
+            e.preventDefault()
+
+        })
+    </script>
+</body>
+
+</html>

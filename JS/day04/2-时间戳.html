@@ -1,0 +1,32 @@
+<!--
+ * @Author: 宋之树 2334304096@qq.com
+ * @Date: 2024-07-04 17:20:04
+ * @LastEditors: 宋之树 2334304096@qq.com
+ * @LastEditTime: 2024-07-04 17:20:10
+ * @FilePath: \JS\day04\2-时间戳.html
+ * @Description: 
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //获取时间戳  当前的
+        const date = new Date()
+        console.log(date.getTime() + "时间戳");
+
+        console.log(+new Date() + "方式二");
+        console.log(Date.now() + "方式三");
+
+        /* 获取指定的时间戳 */
+        console.log(+new Date('2022-4-1 18:30:00'));
+    </script>
+</body>
+
+</html>

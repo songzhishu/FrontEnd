@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /* 属性 方法 */
+        let stu = {
+            name: '张三',
+            age: 23,
+            sex: '男',
+            eat: function (params) {
+                alert(stu.name + "吃" + params)
+            }
+        }
+        stu.eat("苹果")
+
+        console.log(stu['age']);
+
+        for (const key in stu) {
+            if (Object.hasOwnProperty.call(stu, key)) {
+                const element = stu[key];
+                console.log(element);
+
+            }
+        }
+    </script>
+</body>
+
+</html>

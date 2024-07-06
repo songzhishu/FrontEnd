@@ -1,0 +1,59 @@
+<!--
+ * @Author: 宋之树 2334304096@qq.com
+ * @Date: 2024-06-27 09:21:45
+ * @LastEditors: 宋之树 2334304096@qq.com
+ * @LastEditTime: 2024-06-27 11:12:32
+ * @FilePath: \HTML_AND_CSS\day06\1-相对定位.html
+ * @Description: 
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <Style>
+        .outer {
+            width: 500px;
+            border: 1px salmon solid;
+            padding: 10px;
+
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            font-size: 20px;
+        }
+        .box1{
+            background-color: aqua;
+        }
+        .box2{
+            background-color: orange;
+            /* 开启相对定位 对当前文档的位置 也就是自身 
+            只要开启定位那么,可能会覆盖其他的 */
+            position: relative;
+            left: 200px;
+
+            /* 相较于浮动 浮动不可能超出父容器,但是对于定位可以超出父容器
+            而且定位相当于改变了宽高,还在,并没有飞起来
+            左右不能同时使用,上下不能同时使用
+             */
+        }
+        .box3{
+            background-color: green;
+        }
+    </Style>
+</head>
+
+<body>
+    <div class="outer">
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!--
+ * @Author: 宋之树 2334304096@qq.com
+ * @Date: 2024-06-29 14:20:13
+ * @LastEditors: 宋之树 2334304096@qq.com
+ * @LastEditTime: 2024-06-29 14:35:29
+ * @FilePath: \JS\day01\14-atm.html
+ * @Description: 
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let money = 1000;
+        outerLoop: while (true) {
+            let option = prompt("输入你的操作: 1--存, 2--取, 3--查看余额, 4--退出");
+            switch (option) {
+                case '1':
+                    let num1 = +prompt("输入你要存入的金额");
+                    money += num1;
+                    break;
+                case '2':
+                    let num2 = +prompt("输入你要取出的金额");
+                    if (num2 <= money) {
+                        money -= num2;
+                    } else {
+                        alert("账户余额不足！");
+                    }
+                    break;
+                case '3':
+                    alert("你的账户余额为: " + money);
+                    break;
+                case '4':
+                    alert("欢迎您的再次使用！");
+                    break outerLoop; // 或者使用 break 跳出循环
+                default:
+                    alert("输入的为无效操作");
+                    break;
+            }
+        }
+    </script>
+</body>
+
+</html>

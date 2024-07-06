@@ -1,0 +1,43 @@
+<!--
+ * @Author: 宋之树 2334304096@qq.com
+ * @Date: 2024-07-02 22:22:02
+ * @LastEditors: 宋之树 2334304096@qq.com
+ * @LastEditTime: 2024-07-02 22:22:07
+ * @FilePath: \JS\day03\3-事件类型.html
+ * @Description: 
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+    <script>
+
+        const div = document.querySelector('div')
+        /* 鼠标滑过 */
+        div.addEventListener('mouseenter', function () {
+            console.log("鼠标滑过")
+        })
+
+        /* 鼠标离开 */
+        div.addEventListener("mouseleave", function () {
+            console.log("鼠标离开");
+        })
+    </script>
+</body>
+
+</html>

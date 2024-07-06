@@ -1,0 +1,104 @@
+<!--
+ * @Author: 宋之树 2334304096@qq.com
+ * @Date: 2024-05-29 11:56:03
+ * @LastEditors: 宋之树 2334304096@qq.com
+ * @LastEditTime: 2024-05-29 14:25:21
+ * @FilePath: \HTML_AND_CSS\day01\表格合并.html
+ * @Description: 
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table border="1" width="500" cellspacing="0" hight="500">
+        <caption>课程表</caption>
+        <thead width="50" align="center" valign="middle">
+            <tr>
+                <th>上午下午</th>
+                <th colspan="5">上课</th>
+                <th colspan="2">休息</th>
+            </tr>
+        </thead>
+        <tbody width="50" align="center" valign="middle">
+            <tr>
+                <td>星期</td>
+                <td>星期1</td>
+                <td>星期2</td>
+                <td>星期3</td>
+                <td>星期4</td>
+                <td>星期5</td>
+                <td>星期6</td>
+                <td>星期7</td>
+            </tr>
+            <tr>
+                <td rowspan="4">上午</td>
+                <td>竞赛</td>
+                <td>竞赛</td>
+                <td>竞赛</td>
+                <td>竞赛</td>
+                <td>竞赛</td>
+                <td>竞赛</td>
+                <td rowspan="4">休息</td>
+            </tr>
+            <tr>
+                <td>语文</td>
+                <td>英语</td>
+                <td>物理</td>
+                <td>竞赛</td>
+                <td>竞赛</td>
+                <td>竞赛</td>
+            </tr>
+
+            <tr>
+                <td>语文</td>
+                <td>英语</td>
+                <td>物理</td>
+                <td>竞赛</td>
+                <td>竞赛</td>
+                <td>竞赛</td>
+            </tr>
+            <tr>
+                <td>语文</td>
+                <td>英语</td>
+                <td>化学</td>
+                <td>竞赛</td>
+                <td>竞赛</td>
+                <td>竞赛</td>
+            </tr>
+            <tr>
+                <td rowspan="3">下午</td>
+                <td>语文</td>
+                <td>英语</td>
+                <td>物理</td>
+                <td>化学</td>
+                <td>竞赛</td>
+                <td>竞赛</td>
+                <td rowspan="3">休息</td>
+            </tr>
+            <tr>
+                <td>语文</td>
+                <td>语文</td>
+                <td>英语</td>
+                <td>物理</td>
+                <td>化学</td>
+                <td>竞赛</td>
+            </tr>
+            <tr>
+                <td>语文</td>
+                <td>英语</td>
+                <td>英语</td>
+                <td>化学</td>
+                <td>竞赛</td>
+                <td>竞赛</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

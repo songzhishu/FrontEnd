@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span {
+            color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="http://www.baidu.com">支付成功,<span>5</span>秒钟之后跳转到首页</a>
+    <script>
+        const a = document.querySelector('a')
+        let count = 5
+        let id = setInterval(function () {
+            count--
+            a.innerHTML = `支付成功,<span>${count}</span>秒钟之后跳转到首页`
+            if (count === 0) {
+                clearInterval(id)
+
+                //跳转
+                location.href = 'http://www.baidu.com'
+
+                /* search 获取搜索携带的参数
+                hash 获取地址中的哈希值 #后的部分
+                reload  刷新数据*/
+            }
+        }, 1000)
+    </script>
+</body>
+
+</html>

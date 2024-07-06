@@ -1,0 +1,49 @@
+<!--
+ * @Author: 宋之树 2334304096@qq.com
+ * @Date: 2024-07-04 09:27:54
+ * @LastEditors: 宋之树 2334304096@qq.com
+ * @LastEditTime: 2024-07-04 10:27:56
+ * @FilePath: \JS\day03\17-元素滚动事件.html
+ * @Description: 
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 3000px;
+        }
+
+        img {
+            margin-top: 300px;
+            height: 100px;
+            width: 200px;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <a href="www.baidu.com"><img src="./images/tab00.png" alt=""></a>
+    <script>
+        const img = document.querySelector('img')
+        window.addEventListener('scroll', function () {
+            const n = document.documentElement.scrollTop
+            console.log(n)
+            if (n >= 200) {
+                img.style.display = 'block'
+            } else {
+                img.style.display = 'none'
+
+            }
+        })
+    </script>
+
+</body>
+
+</html>

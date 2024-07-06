@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //页面的所有资源加载完毕,会执行回调函数
+        /*  window.addEventListener('load', function () {
+             console.log("资源加载完毕");
+             const btn = document.querySelector('button')
+             btn.addEventListener('click', function () {
+                 alert("点击了")
+             })
+         }) */
+
+        document.addEventListener('DOMContentLoaded', function () {
+            console.log("加载完毕,不用等待样式,js这些加载完毕");
+            const btn = document.querySelector('button')
+            btn.addEventListener('click', function () {
+                alert("点击了")
+            })
+        })
+    </script>
+</head>
+
+<body>
+
+    <button>点击</button>
+</body>
+
+</html>

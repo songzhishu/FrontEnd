@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #d1 {
+            height: 600px;
+            padding: 50px;
+            background-color: gray;
+            font-size: 40px;
+            color: yellow;
+            font-weight: bold;
+        }
+        #d2 {
+            height: 400px;
+            padding: 50px;
+            background-color: orange;
+        }
+        #d3 {
+            height: 200px;
+            background-color: green;
+         
+        }
+
+        /* 默认元素的优先级要大于继承的优先级 */
+
+    </style>
+</head>
+
+<body>
+    <div id="d1">
+        <div id="d2">
+            <div id="d3">你好呀</div>
+        </div>
+    </div>
+</body>
+
+</html>

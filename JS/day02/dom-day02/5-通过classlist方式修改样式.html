@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            color: black;
+            margin: 0 auto;
+            background-color: aqua;
+        }
+
+        .active {
+            color: crimson;
+            background-color: chocolate;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">文字</div>
+    <script>
+        const div = document.querySelector("div")
+        /* 不会使之前的失效 类名不加点 */
+        div.classList.add('active')
+
+        /* add添加
+        remove 移除
+        toggle 切换 */
+    </script>
+</body>
+
+</html>

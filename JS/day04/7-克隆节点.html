@@ -1,0 +1,38 @@
+<!--
+ * @Author: 宋之树 2334304096@qq.com
+ * @Date: 2024-07-06 10:36:17
+ * @LastEditors: 宋之树 2334304096@qq.com
+ * @LastEditTime: 2024-07-06 10:41:37
+ * @FilePath: \JS\day04\7-克隆节点.html
+ * @Description: 
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+    </ul>
+
+    <script>
+        /* 获取要克隆的节点 */
+        const ul = document.querySelector('ul')
+
+        const li = ul.children[0].cloneNode(true)
+
+        /* 追加元素 */
+        ul.appendChild(li)
+    </script>
+
+</body>
+
+</html>

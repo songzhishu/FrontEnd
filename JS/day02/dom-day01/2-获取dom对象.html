@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="box"></div>
+    <span class="sq"></span>
+
+    <ol>
+        <li>转给你收纳</li>
+        <li>转给你收纳</li>
+        <li>转给你收纳</li>
+        <li>转给你收纳</li>
+        <li>转给你收纳</li>
+    </ol>
+    <script>
+        /* 依靠css的选择器来获取dom对象 这种如果多个符合获取的是第一个对象*/
+        const b1 = document.querySelector('.box')
+
+        /* 选取多个对象 */
+
+        const lis = document.querySelectorAll('ol li')
+
+        /* console.dir(lis); */
+
+        for (let i = 0; i < lis.length; i++) {
+            const element = lis[i];
+            element.style.color="red"
+            console.log(element)
+
+        }
+    </script>
+</body>
+
+</html>

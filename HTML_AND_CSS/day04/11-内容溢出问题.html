@@ -1,0 +1,55 @@
+<!--
+ * @Author: 宋之树 2334304096@qq.com
+ * @Date: 2024-06-23 16:32:17
+ * @LastEditors: 宋之树 2334304096@qq.com
+ * @LastEditTime: 2024-06-23 16:32:23
+ * @FilePath: \FrontEnd\HTML_AND_CSS\day04\11-内容溢出问题.html
+ * @Description: 
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #d1 {
+            width: 400px;
+            height: 200px;
+            background-color: skyblue;
+
+            /* 存在溢出的情况 
+            hidden 隐藏*/
+            overflow: auto;
+            /* 隐藏 */
+
+
+        }
+        #d2 {
+            width: 1000px;
+            background-color: skyblue;
+            background-color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="d1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. A assumenda beatae, dolores accusamus, natus vel nobis
+        perferendis incidunt adipisci eveniet iste. Mollitia voluptas iure praesentium. Ad totam placeat necessitatibus
+        vitae, animi possimus itaque non aut tenetur impedit perferendis perspiciatis error, dicta officiis enim nam,
+        <div id="d2">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, totam magni, tempore aliquid adipisci
+            aliquam facilis laudantium amet harum sequi error quis rerum repellendus aspernatur! Ut consectetur
+            voluptate deserunt numquam voluptatem ad aspernatur temporibus asperiores quis at ipsam necessitatibus minus
+            excepturi consequuntur maxime, consequatur unde dolorem earum rerum? At, dolor!
+        </div>
+        cumque quia nihil! Numquam rem temporibus unde debitis ducimus! Corrupti rerum ex temporibus et nobis ducimus
+        impedit nihil facere fugit dolor reprehenderit reiciendis, quaerat earum distinctio error accusantium non,
+        consectetur placeat ad quam? Animi, atque eaque? Iusto ab sapiente iste officiis enim accusantium aspernatur
+        praesentium sint voluptate placeat, numquam voluptates itaque nobis, sit qui molestias quas.
+    </div>
+</body>
+
+</html>

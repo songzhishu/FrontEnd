@@ -1,0 +1,47 @@
+<!--
+ * @Author: 宋之树 2334304096@qq.com
+ * @Date: 2024-05-29 17:53:38
+ * @LastEditors: 宋之树 2334304096@qq.com
+ * @LastEditTime: 2024-05-29 17:53:46
+ * @FilePath: \HTML_AND_CSS\day02\html\9_交集选择器.html
+ * @Description: 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .dog{
+            color: aqua;
+        }
+        h1{
+            color: #000;
+        }
+        /* 这里 */
+        p.dog{
+            color: rgb(71, 255, 89);
+        }
+
+        .dog,
+        .nodog,
+        .m,
+        .nom{
+            font-size: 40px;
+            background-color: aliceblue;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <p class="dog">没有小狗的人</p>
+    <p class="nodog">有小狗的人</p>
+
+    <h1 class="m">有前的人</h1>
+    <h1 class="nom">没前的人</h1>
+
+    <p class="dog">有狗和有前的人</p>
+    
+</body>
+</html>

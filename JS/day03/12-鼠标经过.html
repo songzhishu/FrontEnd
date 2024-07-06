@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .dad {
+            width: 200px;
+            height: 200px;
+            background-color: blueviolet;
+        }
+
+        .baby {
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="dad">
+        <div class="baby"></div>
+    </div>
+
+
+    <script>
+        const dad = document.querySelector('.dad')
+        const baby = document.querySelector('.baby')
+
+        dad.addEventListener('mouseenter', function () {
+            console.log("鼠标经过");
+        })
+        dad.addEventListener('mouseleave', function () {
+            console.log("鼠标离开");
+        })
+        /* mouseover mouseout如果有孩子的话,会出现重复的经过情况  */
+    </script>
+</body>
+
+</html>

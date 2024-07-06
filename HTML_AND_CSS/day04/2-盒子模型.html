@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div1{
+            width: 200px;
+            height:  200px;
+            background-color: aqua;
+            font-size: 20px;
+        }
+        .div2{
+            /*em是逐层的寻找字体大小  */
+            width: 10em;
+            height: 10em;
+            font-size: 20px;
+            background-color: blue;
+        }
+
+        .div3{
+            /*rem是直接向祖宗html中寻找,的寻找字体大小  */
+            width: 10rem;
+            height: 10rem;
+            font-size: 20px;
+            background-color: blue;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="div1">色过啦色剂</div>
+    <div class="div2">登记了</div>
+    <div class="div3">登记了</div>
+    <div class="div4">登记了</div>
+</body>
+</html>

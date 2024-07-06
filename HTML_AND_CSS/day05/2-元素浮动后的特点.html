@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outer {
+            width: 800px;
+            height: 400px;
+            background-color: grey;
+            /* 内边距 */
+            padding: 10px;
+        }
+
+        .box {
+            font-size: 20px;
+            padding: 10px;
+        }
+
+        .box1 {
+            background-color: aqua;
+        }
+
+        .box2 {
+            background-color: green;
+            float: right;
+        }
+
+        .box3 {
+            background-color: orange;
+        }
+        /* 一个元素浮动之后的改变
+        块 行 行内块 之间的都是XXXX
+        
+        可以个其他的元素公用一行--飞起来了
+
+        浮动后的元素没有margin的属性
+         */
+    </style>
+</head>
+
+<body>
+    <div class="outer">
+        <div class="box box1">盒子1</div>
+        <div class="box box2">盒子2</div>
+        <div class="box box3">盒子3</div>
+    </div>
+</body>
+
+</html>

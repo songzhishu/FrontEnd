@@ -1,0 +1,40 @@
+<!--
+ * @Author: 宋之树 2334304096@qq.com
+ * @Date: 2024-05-30 13:10:06
+ * @LastEditors: 宋之树 2334304096@qq.com
+ * @LastEditTime: 2024-05-30 13:47:04
+ * @FilePath: \HTML_AND_CSS\day02\html\13_属性选择器.html
+ * @Description: 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 限定有title属性的 */
+        [title]{
+            color: aqua;
+        }
+        /* 限制 title和title属性值 */
+        [title="a1"]{
+            color: blueviolet;
+        }
+        /* 统配符形式 ^ 前 $ 后 * 包含*/
+        [title^="a2"]{
+            color: chartreuse;
+        }
+
+    </style>
+</head>
+<body>
+    <div title="a1">kkkk</div>
+    <div title="a2">kkkk</div>
+    <div title="a23">kkkk</div>
+    <div title="a24">kkkk</div>
+    <div title="a54">kkkk</div>
+    <div title="a64">kkkk</div>
+
+</body>
+</html>

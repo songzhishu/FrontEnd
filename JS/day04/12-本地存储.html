@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        localStorage.setItem('name', '小李')
+        localStorage.setItem('age', 18)
+
+        console.log(localStorage.getItem('name'));
+        setInterval(function () {
+            localStorage.removeItem('age')
+        }, 5000)
+
+        /* sessionStorage同理 关闭后就不存在了 */
+
+
+        /* 复杂类型的数据如何存储 
+        将复杂类型的数据转换成为json类型的数据 
+        */
+
+        const obj = {
+            name: '夏利',
+            age: 18,
+            sex: '男'
+        }
+
+        localStorage.setItem('obj', JSON.stringify(obj))
+
+        //将json的数据类型转换为对象
+        console.log(JSON.parse(localStorage.getItem('obj')));
+    </script>
+</body>
+
+</html>

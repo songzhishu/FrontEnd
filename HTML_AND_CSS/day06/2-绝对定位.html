@@ -1,0 +1,63 @@
+<!--
+ * @Author: 宋之树 2334304096@qq.com
+ * @Date: 2024-06-27 09:21:45
+ * @LastEditors: 宋之树 2334304096@qq.com
+ * @LastEditTime: 2024-06-27 13:02:46
+ * @FilePath: \HTML_AND_CSS\day06\2-绝对定位.html
+ * @Description: 
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <Style>
+        .outer {
+            width: 500px;
+            border: 1px salmon solid;
+            padding: 10px;
+            /* 父级开启相对定位 */
+            position: relative;
+
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            font-size: 20px;
+        }
+        .box1{
+            background-color: aqua;
+        }
+        .box2{
+            background-color: orange;
+            position: absolute;
+            /* 父级开启相对定位的话,相对位置是对应的父级
+            子绝父相
+            */
+            top: 210px;
+            left: 10px;
+
+        }
+        .box3{
+            background-color: green;
+        }
+
+        .outer:hover .box2{
+            left: 210px;
+        }
+    </Style>
+</head>
+
+<body>
+    <div class="outer">
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+    </div>
+</body>
+
+</html>

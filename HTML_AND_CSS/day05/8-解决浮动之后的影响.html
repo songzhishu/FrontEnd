@@ -1,0 +1,60 @@
+<!--
+ * @Author: 宋之树 2334304096@qq.com
+ * @Date: 2024-06-25 21:39:25
+ * @LastEditors: 宋之树 2334304096@qq.com
+ * @LastEditTime: 2024-06-25 21:53:25
+ * @FilePath: \FrontEnd\HTML_AND_CSS\day05\8-解决浮动之后的影响.html
+ * @Description: 
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outer {
+            width: 500px;
+            background-color: grey;
+            border: 1px solid black;
+            height: 200;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: skyblue;
+            border: 1px saddlebrown solid;
+            margin: 10px;
+        }
+
+        .box1,
+        .box2,
+        .box3 {
+            float: left;
+        }
+
+        .box4{
+            
+            /* 行内块 */
+            display: inline-block;
+            /* height: 400px; */
+        }
+
+        /* 浮动后 会影响父级元素,和后边的兄弟 */
+    </style>
+</head>
+
+<body>
+    <div class="outer">
+        <!-- <div class="box box0">0</div> -->
+
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+        <div class="box box4">4</div>
+    </div>
+</body>
+
+</html>

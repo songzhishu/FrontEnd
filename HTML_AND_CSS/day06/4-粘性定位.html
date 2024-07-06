@@ -1,0 +1,111 @@
+<!--
+ * @Author: 宋之树 2334304096@qq.com
+ * @Date: 2024-06-27 14:15:52
+ * @LastEditors: 宋之树 2334304096@qq.com
+ * @LastEditTime: 2024-06-27 14:31:10
+ * @FilePath: \HTML_AND_CSS\day06\4-粘性定位.html
+ * @Description: 
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0;
+        }
+
+        body {
+            height: 20000px;
+        }
+
+        .page-header {
+            height: 100px;
+            text-align: center;
+            line-height: 100px;
+            background-color: orange;
+            font-size: 20px;
+        }
+
+        .item {
+            background-color: aqua;
+        }
+
+        .first {
+            background-color: brown;
+            font-size: 40px;
+            position: sticky;
+            top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 头部 -->
+    <div class="page-header">头部</div>
+
+    <!-- 内容区 -->
+    <div class="content">
+        <div class="item">
+            <div class="first">A</div>
+            <h2>A1</h2>
+            <h2>A2</h2>
+            <h2>A3</h2>
+            <h2>A4</h2>
+            <h2>A5</h2>
+            <h2>A6</h2>
+            <h2>A7</h2>
+            <h2>A8</h2>
+        </div>
+        <div class="item">
+            <div class="first">B</div>
+            <h2>B1</h2>
+            <h2>B2</h2>
+            <h2>B3</h2>
+            <h2>B4</h2>
+            <h2>B5</h2>
+            <h2>B6</h2>
+            <h2>B7</h2>
+            <h2>B8</h2>
+        </div>
+        <div class="item">
+            <div class="first">C</div>
+            <h2>C1</h2>
+            <h2>C2</h2>
+            <h2>C3</h2>
+            <h2>C4</h2>
+            <h2>C5</h2>
+            <h2>C6</h2>
+            <h2>C7</h2>
+            <h2>C8</h2>
+        </div>
+        <div class="item">
+            <div class="first">D</div>
+            <h2>D1</h2>
+            <h2>D2</h2>
+            <h2>D3</h2>
+            <h2>D4</h2>
+            <h2>D5</h2>
+            <h2>D6</h2>
+            <h2>D7</h2>
+            <h2>D8</h2>
+        </div>
+        <div class="item">
+            <div class="first">A</div>
+            <h2>A1</h2>
+            <h2>A2</h2>
+            <h2>A3</h2>
+            <h2>A4</h2>
+            <h2>A5</h2>
+            <h2>A6</h2>
+            <h2>A7</h2>
+            <h2>A8</h2>
+        </div>
+    </div>
+</body>
+
+</html>
