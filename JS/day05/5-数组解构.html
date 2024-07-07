@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    const arr = [10, 11, 12]
+    const [min, mid, max] = arr
+    console.log(min);
+    console.log(mid);
+    console.log(max);
+
+    /* 数组解构可以快速赋值
+    
+
+    */
+
+    // 单元值少 变量多
+    // const [a, b, c, d] = [1, 2, 3, 4, 5]
+
+    console.log(a);
+    console.log(b);
+    console.log(c);
+    console.log(d);
+
+
+    /* 可以设置默认值 放置undefined */
+    //const [a = 0, b = 0, c = 0, d = 0] = [1, 2, 3, 4, 5]
+
+    /* 选择性忽略 忽略掉三 */
+    const [a, b, , c, d] = [1, 2, 3, 4, 5]
+
+</script>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!--
+ * @Author: 宋之树 2334304096@qq.com
+ * @Date: 2024-07-07 15:27:29
+ * @LastEditors: 宋之树 2334304096@qq.com
+ * @LastEditTime: 2024-07-07 15:31:46
+ * @FilePath: \FrontEnd\JS\day05\10-object内置函数.html
+ * @Description: 
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /* 静态方法 */
+        const p = {
+            name: 'xial1',
+            age: 15
+        }
+
+        /* 取出对象所有的属性名 */
+        const arr = Object.keys(p)
+        const arrv = Object.values(p)
+
+
+        console.log(arr);
+        console.log(arrv);
+
+
+        // 对象copy
+        const oo = {}
+
+        /* 前 复制的 后 要被复制的  */
+        Object.assign(oo, p)
+
+        console.log(oo);
+    </script>
+</body>
+
+</html>
