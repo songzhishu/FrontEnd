@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /* 公共的属性 */
+        function Person() {
+            this.eyes = 2
+            this.head = 1
+        }
+
+        function Woman() {
+
+        }
+
+        function Man() {
+
+        }
+
+        // 对于公共的的属性可以放下原型中
+        Woman.prototype = new Person()
+        Man.prototype = new Person()
+        /* 这方式会导致constructor属性失效 所以完成原型继承后应该恢复constructor属性 */
+
+        Woman.prototype.constructor = Woman
+        Man.prototype.constructor = Man
+
+
+        Woman.prototype.baby = function () {
+            console.log("chengxiaohai1");
+        }
+
+        const red = new Woman()
+        const p = new Man()
+
+        console.log(red);
+        console.log(p);
+    </script>
+
+</body>
+
+</html>

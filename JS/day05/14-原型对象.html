@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /* 公共的属性写在构造函数中
+            公共的方法写在原型对象中 */
+
+        function Star(name, age) {
+            /* 公共属性 */
+            this.name = name
+            this.age = age
+
+        }
+        Star.prototype.sing = function () {
+            console.log("唱歌");
+        }
+
+        /* 构造函数和原型方法都是指向的是实例对象 */
+    </script>
+</body>
+
+</html>

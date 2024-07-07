@@ -1,0 +1,49 @@
+<!--
+ * @Author: 宋之树 2334304096@qq.com
+ * @Date: 2024-07-07 21:17:11
+ * @LastEditors: 宋之树 2334304096@qq.com
+ * @LastEditTime: 2024-07-07 21:42:34
+ * @FilePath: \FrontEnd\JS\day06\1-原型继承有bug.html
+ * @Description: 
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /* 公共的属性 */
+        const Person = {
+            eyes: 2,
+            head: 1
+        }
+
+        function Woman() {
+
+        }
+
+        function Man() {
+
+        }
+
+        // 对于公共的的属性可以放下原型中
+        Woman.prototype = Person
+        /* 这方式会导致constructor属性失效 所以完成原型继承后应该恢复constructor属性 */
+        
+        Woman.prototype.constructor = Woman  
+
+
+        /* 这种方式如果后期对女人上添加惯性属性,那么他会影响到和其公用原型的对象
+         */
+
+        const red = new Woman()
+        console.log(red);
+    </script>
+</body>
+
+</html>
