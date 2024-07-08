@@ -1,0 +1,38 @@
+<!--
+ * @Author: 宋之树 2334304096@qq.com
+ * @Date: 2024-07-08 21:46:16
+ * @LastEditors: 宋之树 2334304096@qq.com
+ * @LastEditTime: 2024-07-08 21:53:12
+ * @FilePath: \FrontEnd\AJAX\2-axios查询参数.html
+ * @Description: 
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p></p>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script>
+        axios({
+            url: "http://hmajax.itheima.net/api/city",
+            params: {
+                pname: '河南省'
+            }
+        }).then((result) => {
+            console.log(result);
+
+            document.querySelector("p").innerHTML = result.data.list.join('<br>')
+        }).catch((err) => {
+
+        });
+    </script>
+
+</body>
+
+</html>
