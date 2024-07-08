@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const obj = {
+            name: 'pink',
+            age: 18,
+            hobby: ['柴帆', '消息']
+        }
+
+        const o = {}
+
+        function deepCopy(newObj, oldObj) {
+            for (const key in oldObj) {
+                // 处理数据的顺序 先数组 然后对象,因为数组也属于对象
+                if (oldObj[key] instanceof Array) {
+                    newObj[key] = []
+                    deepCopy(newObj[key], oldObj[key])
+                }
+                else if (oldObj[key] instanceof Object) {
+                    newObj[key] = {}
+                    deepCopy(newObj[key], oldObj[key])
+                }
+                newObj[key] = oldObj[key]
+            }
+        }
+
+        deepCopy(o, obj)
+
+    </script>
+</body>
+
+</html>
