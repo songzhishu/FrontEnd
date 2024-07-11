@@ -1,0 +1,37 @@
+<!--
+ * @Author: 宋之树 2334304096@qq.com
+ * @Date: 2024-07-10 17:09:51
+ * @LastEditors: 宋之树 2334304096@qq.com
+ * @LastEditTime: 2024-07-10 17:11:44
+ * @FilePath: \FrontEnd\AJAX\day03\XMLHttpRequest_查询参数\index.html
+ * @Description: 
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>XMLHttpRequest_查询参数</title>
+</head>
+
+<body>
+  <script>
+    /**
+     * 目标：使用XHR携带查询参数，展示某个省下属的城市列表
+    */
+    const xhr = new XMLHttpRequest()
+
+    xhr.open('GET', 'http://hmajax.itheima.net/api/city?pname=辽宁省')
+
+    xhr.addEventListener('loadend', () => {
+      const data = JSON.parse(xhr.response)
+      console.log(data);
+    })
+
+    xhr.send()
+  </script>
+</body>
+
+</html>
